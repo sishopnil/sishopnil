@@ -32,16 +32,3 @@ Dual login strategy with unified token management system.
 
 📌 **[Analytics Dashboard](https://github.com/sishopnil/)**  
 Role-based data visualization, filters, and PDF export functionality.  
-
----
-
-## 🧩 System Design Snapshot  
-
-```mermaid
-graph TD
-  User -->|Request| API[API Gateway]
-  API --> SVC[NestJS Services]
-  SVC --> DB[(Postgres)]
-  SVC --> Cache[(Redis)]
-  SVC --> MQ[(RabbitMQ)]
-  SVC --> Auth[JWT/Firebase]
